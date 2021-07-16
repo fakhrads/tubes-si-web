@@ -18,30 +18,6 @@
                 </li>
                 <li data-menu=""><a class="dropdown-item" href="{{ route('rak_buku') }}" data-toggle="dropdown" data-i18n="Racks"><i class="feather icon-server"></i>Data Rak Buku</a>
                 </li>
-                <!--
-                <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="Ecommerce"><i class="feather icon-shopping-cart"></i>Ecommerce</a>
-                    <ul class="dropdown-menu">
-                        <li data-menu=""><a class="dropdown-item" href="app-ecommerce-shop.html" data-toggle="dropdown" data-i18n="Shop"><i class="feather icon-circle"></i>Shop</a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item" href="app-ecommerce-details.html" data-toggle="dropdown" data-i18n="Details"><i class="feather icon-circle"></i>Details</a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item" href="app-ecommerce-wishlist.html" data-toggle="dropdown" data-i18n="Wish List"><i class="feather icon-circle"></i>Wish List</a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item" href="app-ecommerce-checkout.html" data-toggle="dropdown" data-i18n="Checkout"><i class="feather icon-circle"></i>Checkout</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown dropdown-submenu" data-menu="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown" data-i18n="User"><i class="feather icon-user"></i>User</a>
-                    <ul class="dropdown-menu">
-                        <li data-menu=""><a class="dropdown-item" href="app-user-list.html" data-toggle="dropdown" data-i18n="List"><i class="feather icon-circle"></i>List</a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item" href="app-user-view.html" data-toggle="dropdown" data-i18n="View"><i class="feather icon-circle"></i>View</a>
-                        </li>
-                        <li data-menu=""><a class="dropdown-item" href="app-user-edit.html" data-toggle="dropdown" data-i18n="Edit"><i class="feather icon-circle"></i>Edit</a>
-                        </li>
-                    </ul>
-                </li>
-                -->
             </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="{{ route('anggota') }}"><i class="feather icon-user"></i><span data-i18n="Dashboard">Manajemen Anggota</span></a></li>
