@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\RakController;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\AnggotaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +15,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('rak')->group(function () {
+    Route::get('/',[RakController::class, 'index'])->name('rak_buku');
+});
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
+
+#Route::middleware()->group(function () {
+#    Route::get('/', function () {
+#        // Uses first & second middleware...
+#    });
+
+#    Route::get('/user/profile', function () {
+#        // Uses first & second middleware...
+#    });
+#});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

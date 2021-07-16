@@ -13,7 +13,7 @@ class RakController extends Controller
      */
     public function index()
     {
-        //
+        return view('rak.index');
     }
 
     /**
