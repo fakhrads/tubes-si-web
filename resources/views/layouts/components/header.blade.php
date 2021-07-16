@@ -1,6 +1,6 @@
 <div class="navbar-header d-xl-block d-none">
     <ul class="nav navbar-nav flex-row">
-        <li class="nav-item"><a class="navbar-brand" href="#">
+        <li class="nav-item"><a href="#">
                 Perpustakaan Kelompok 2
             </a>
         </li>

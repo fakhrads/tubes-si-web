@@ -15,8 +15,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::prefix('rak')->group(function () {
-    Route::get('/',[RakController::class, 'index'])->name('rak_buku');
+Route::prefix('buku')->group(function () {
+    Route::get('/',[BukuController::class, 'index'])->name('buku');
+    Route::get('/rak',[RakController::class, 'index'])->name('rak_buku');
+});
+
+Route::prefix('anggota')->group(function () {
+    Route::get('/',[AnggotaController::class, 'index'])->name('anggota');
 });
 
 Route::get('/', function () {

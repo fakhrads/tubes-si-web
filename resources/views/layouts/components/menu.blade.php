@@ -14,7 +14,7 @@
         <li class="nav-item"><a class="nav-link" href="/"><i class="feather icon-home"></i><span data-i18n="Dashboard">Halaman Utama</span></a></li>
         <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="feather icon-package"></i><span data-i18n="Apps">Buku/Rak Buku</span></a>
             <ul class="dropdown-menu">
-                <li data-menu=""><a class="dropdown-item" href="#" data-toggle="dropdown" data-i18n="Books"><i class="feather icon-book"></i>Data Buku</a>
+                <li data-menu=""><a class="dropdown-item" href="{{ route('buku') }}" data-toggle="dropdown" data-i18n="Books"><i class="feather icon-book"></i>Data Buku</a>
                 </li>
                 <li data-menu=""><a class="dropdown-item" href="{{ route('rak_buku') }}" data-toggle="dropdown" data-i18n="Racks"><i class="feather icon-server"></i>Data Rak Buku</a>
                 </li>
@@ -44,5 +44,6 @@
                 -->
             </ul>
         </li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('anggota') }}"><i class="feather icon-user"></i><span data-i18n="Dashboard">Manajemen Anggota</span></a></li>
     </ul>
 </div>
