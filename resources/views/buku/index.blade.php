@@ -23,6 +23,10 @@
 <section id="basic-datatable">
     <div class="row">
         <div class="col-12">
+            <div class="text-right">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#default">Open Modal</button>
+            </div>
+            
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Data Buku</h4>
@@ -75,5 +79,27 @@
             </div>
         </div>
     </div>
-</section>
+</section>  
+      <!-- Modal content-->
+      <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Basic Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5>Check First Paragraph</h5>
+                    <p>Oat cake ice cream candy chocolate cake chocolate cake cotton candy dragée apple pie.
+                        Brownie carrot cake candy canes bonbon fruitcake topping halvah. Cake sweet roll cake
+                        cheesecake cookie chocolate cake liquorice.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
