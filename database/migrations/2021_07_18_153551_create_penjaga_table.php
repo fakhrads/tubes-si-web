@@ -14,8 +14,10 @@ class CreatePenjagaTable extends Migration
     public function up()
     {
         Schema::create('penjaga', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id_petugas');
             $table->timestamps();
+
+            $table->foreign('id_petugas')->references('id_petugas')->on('petugas_perpustakaan');
         });
     }
 

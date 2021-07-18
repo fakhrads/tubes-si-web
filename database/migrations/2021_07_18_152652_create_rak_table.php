@@ -14,7 +14,8 @@ class CreateRakTable extends Migration
     public function up()
     {
         Schema::create('rak', function (Blueprint $table) {
-            $table->id();
+            $table->id('nomor_rak',25);
+            $table->string('kategori',255);
             $table->timestamps();
         });
     }

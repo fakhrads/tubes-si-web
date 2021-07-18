@@ -14,8 +14,11 @@ class CreatePustakawanTable extends Migration
     public function up()
     {
         Schema::create('pustakawan', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id_pustakawan');
+            $table->string('jabatan');
             $table->timestamps();
+
+            $table->foreign('id_petugas')->references('id_petugas')->on('petugas_perpustakaan');
         });
     }
 

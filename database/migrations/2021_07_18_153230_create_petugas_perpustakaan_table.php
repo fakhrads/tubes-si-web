@@ -13,8 +13,11 @@ class CreatePetugasPerpustakaanTable extends Migration
      */
     public function up()
     {
-        Schema::create('petugasperpustakaan', function (Blueprint $table) {
-            $table->id();
+        Schema::create('petugas_perpustakaan', function (Blueprint $table) {
+            $table->id('id_petugas',25)->unique();
+            $table->string('username',255);
+            $table->integer('no_telepon',14);
+            $table->string('password',255);
             $table->timestamps();
         });
     }

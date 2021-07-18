@@ -14,7 +14,11 @@ class CreateDistributorTable extends Migration
     public function up()
     {
         Schema::create('distributor', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_distributor')->unique();
+            $table->string('nama');
+            $table->string('alamat');
+            $table->string('no_telepon');
+            $table->string('email');
             $table->timestamps();
         });
     }
