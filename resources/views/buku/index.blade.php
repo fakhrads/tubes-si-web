@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/vendors.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/tables/datatable/datatables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/pickers/pickadate/pickadate.css') }}">
-@endsection
+@endsection 
 
 @section('customscripts')
     <script src="{{ asset('app-assets/vendors/js/ui/jquery.sticky.js') }}"></script>
