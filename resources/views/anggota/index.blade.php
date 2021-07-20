@@ -27,7 +27,6 @@
 
 @section('content')
 <!-- Zero configuration table -->
-<section id="basic-datatable">
     <div class="row">
         <div class="col-12">
             <div class="text-right">
@@ -86,7 +85,6 @@
             </div>
         </div>
     </div>
-</section>
 <!-- Modal content-->
 <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
