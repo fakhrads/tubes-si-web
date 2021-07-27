@@ -3,6 +3,8 @@
 use App\Http\Controllers\RakController;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\AnggotaController;
+use App\Http\Controllers\LaporanController;
+use App\Http\Controllers\KunjunganController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,9 +26,11 @@ Route::prefix('anggota')->group(function () {
     Route::get('/',[AnggotaController::class, 'index'])->name('anggota');
 });
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix('laporan')->group(function () {
+    Route::get('/',[LaporanController::class, 'index'])->name('anggota');
 });
+
+Route::get('/',[KunjunganController::class, 'index'])->name('kunjungan');
 
 Auth::routes();
 
