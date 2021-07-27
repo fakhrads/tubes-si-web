@@ -19,10 +19,14 @@
 @endsection
 
 @section('content')
-<!-- Zero configuration table -->
+<!-- Tambah Data -->
 <section id="basic-datatable">
     <div class="row">
         <div class="col-12">
+            <div class="text-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#default">Tambah Data</button>
+            </div>
+            <br>
             <div class="card">
                 <div class="card-header">
                     <h4 class="card-title">Data Rak Buku</h4>
@@ -44,8 +48,8 @@
                                         <td>R-001</td>
                                         <td>System Architect</td>
                                         <td>
-                                            <button type="button" class="btn btn-icon btn-outline-primary mr-1 mb-1"><i class="feather icon-edit-1"></i></button>
-                                            <button type="button" class="btn btn-icon btn-outline-danger mr-1 mb-1"><i class="feather icon-trash"></i></button>
+                                            <button type="button" class="btn btn-icon btn-outline-primary mr-1 mb-1" data-toggle="modal" data-target="#default2"><i class="feather icon-edit-1"></i></button>
+                                            <button type="button" class="btn btn-icon btn-outline-danger mr-1 mb-1" data-toggle="modal" data-target="#default1"><i class="feather icon-trash"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -64,4 +68,120 @@
         </div>
     </div>
 </section>
+<!-- END Tambah Data -->
+
+ <!-- Modal content-->
+ <!-- Tambah Rak Buku -->
+ <div class="modal fade text-left" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Tambah Rak Buku</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-vertical">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nomor Rak Buku">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Kategori">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-right">
+                            <button type="button" class="btn bg-gradient-danger mr-1 mb-1" data-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn bg-gradient-primary mr-1 mb-1">Tambah Data</button>
+                        </div>
+                    </form>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Tambah Rak Buku -->
+
+    <!-- Edit Rak Buku -->
+    <div class="modal fade text-left" id="default2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Edit Rak Buku</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-vertical">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Nomor Rak Buku">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Kategori">
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-right">
+                            <button type="button" class="btn bg-gradient-danger mr-1 mb-1" data-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn bg-gradient-primary mr-1 mb-1">Edit Data</button>
+                        </div>
+                    </form>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Edit Rak Buku -->
+
+     <!-- Hapus Rak Buku -->
+     <div class="modal fade text-left" id="default1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel1">Hapus Buku</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form form-vertical">
+                        <div class="form-body">
+                            <div class="row">
+                            <p class="card-text" style="margin: 30px 30px 30px 30px">Apakah anda yakin ingin menghapus buku (Nama Buku)?</p>                           
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-right">
+                            <button type="button" class="btn bg-gradient-danger mr-1 mb-1" data-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn bg-gradient-primary mr-1 mb-1">Hapus Data</button>
+                        </div>
+                    </form>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Edit Rak Buku -->
 @endsection
