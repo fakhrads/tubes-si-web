@@ -117,5 +117,55 @@
         </div>
     </div>
 </div>
+
+<!-- Modal Pengembalian Buku -->
+<div class="modal fade text-left" id="default2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel1">Pengembalian Buku</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form form-vertical">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Id Pengguna">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Id Buku">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Tanggal Peminjaman">
+                                </div>
+                            </div>  
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" id="first-name-vertical" class="form-control" name="fname" placeholder="Tanggal Pengembalian">
+                                </div>
+                            </div>                                      
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <div class="col-12">
+                    <div class="text-right">
+                        <button type="button" class="btn bg-gradient-danger mr-1 mb-1" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn bg-gradient-primary mr-1 mb-1">Buku Dikembalikan</button>
+                    </div>
+                </form>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
 <!-- END Tambah Rak Buku -->
