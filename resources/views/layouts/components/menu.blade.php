@@ -21,6 +21,5 @@
             </ul>
         </li>        
         <li class="nav-item"><a class="nav-link" href="{{ route('anggota') }}"><i class="feather icon-user"></i><span data-i18n="Dashboard">Manajemen Anggota</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('kunjungan') }}"><i class="feather icon-clock"></i><span data-i18n="Dashboard">Data Kunjungan</span></a></li>
     </ul>
 </div>
